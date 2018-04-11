@@ -1,0 +1,79 @@
+program calculator;
+
+var  number1,number2,result:real;
+name:string;
+choise:char;
+
+begin
+repeat
+writeln('This calculator do additions,subtractions,multiplications,divisions and roots.');
+write('What do you want to do? = ');
+readln(name);
+//
+if name='additions'
+then
+begin write('Write the first addend = ');
+readln(number1);
+write('Write the second addend = ');
+readln(number2);
+result:=number1+number2;
+writeln('The sum is = ',result);
+end;
+//
+if nome='subtractions'
+then
+begin
+write('Write the first subtrahend = ');
+readln(number1);
+write('Write the second subtrahend = ');
+readln(number2);
+result:=number1-number2;
+writeln('The difference is = ',result);
+end;
+//
+if name='moltiplications'
+then
+begin
+write('Write the first factor = ');
+readln(number1);
+write('Write the second factor = ');
+readln(number2);
+result:=number1*number2;
+writeln('The product is = ',result);
+end;
+//
+if name='divisions'
+then
+begin
+write('Write the dividend/numerator = ');
+readln(number1);
+write('Write the divisor/denominator = ');
+readln(number2);
+  if number2=0
+  then
+  begin
+  writeln('The divisor is  0!');
+  writeln('Rewrite the divisor.');
+  end
+else
+begin
+result:=number1+number2;
+writeln('The quotient is = ',result);
+end
+end;
+//
+if  nome='roots'
+then
+begin
+write('Write the index of the root = ');
+readln(number2);
+write('Write the radicand = ');
+readln(number1);
+result:=exp(ln(number1)/number2);                  
+writeln('The root is = ',result);
+end;
+//
+write('Would you like to continue?[Y/N]: ');
+readln(choise);
+until (choise='n') or (choise='N');
+end.
