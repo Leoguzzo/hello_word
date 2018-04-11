@@ -1,1 +1,2 @@
-This is a simply calcolator for PASCAL.
+This is a simply calculator for PASCAL.
+What do you think about it?
