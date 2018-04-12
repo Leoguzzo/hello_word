@@ -62,7 +62,7 @@ writeln('The quotient is = ',result);
 end
 end;
 //
-if  nome='roots'
+if  name='roots'
 then
 begin
 write('Write the index of the root = ');
