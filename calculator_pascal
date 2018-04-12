@@ -20,7 +20,7 @@ result:=number1+number2;
 writeln('The sum is = ',result);
 end;
 //
-if nome='subtractions'
+if name='subtractions'
 then
 begin
 write('Write the first subtrahend = ');
